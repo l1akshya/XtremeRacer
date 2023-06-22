@@ -287,11 +287,11 @@ def main():
         player.update_3()
 
     def ai_phantom_set_alpha():
-        player_phantom_ai.image.set_alpha(0)
-        player_phantom_ai_right.image.set_alpha(0)
-        player_phantom_ai_left.image.set_alpha(0)
-        player_phantom_ai_right_2.image.set_alpha(0)
-        player_phantom_ai_left_2.image.set_alpha(0)
+        player_phantom_ai.image.set_alpha(0.2)
+        player_phantom_ai_right.image.set_alpha(0.2)
+        player_phantom_ai_left.image.set_alpha(0.2)
+        player_phantom_ai_right_2.image.set_alpha(0.2)
+        player_phantom_ai_left_2.image.set_alpha(0.2)
 
     def ai_draw():
         all_sprites_ai.draw(screen)
@@ -375,7 +375,7 @@ def main():
             if event.type == pygame.QUIT:
                 running = False
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_SPACE:
+                if event.key == pygame.K_UP:
                     if paused:
                         paused = False
                     else:

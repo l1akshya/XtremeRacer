@@ -61,7 +61,8 @@ while running:
         pygame.quit()
         main()
 
-    options_button.draw()
+    #options_button.draw()
+        
     if exit_button.draw():
         pygame.quit()
         print("Exit")
