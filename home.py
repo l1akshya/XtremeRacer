@@ -4,6 +4,7 @@ import race
 import math
 import random
 from race import main
+from pygame import mixer
 pygame.init()
 screen=pygame.display.set_mode((1188,648))#setting up the screen size
 pygame.display.set_caption("XTREME RACER")#game title
@@ -11,6 +12,8 @@ icon=pygame.image.load("carz.png")#game title
 pygame.display.set_icon(icon)
 home_screen=pygame.image.load("home_screen.png")#loading the background for start screen
 start_playing=pygame.image.load("play.png").convert_alpha()#play button for start screen
+background_music=mixer.music.load(r"C:\Users\LAKSHYA\Desktop\XtremeRacer\background_music.mp3")
+mixer.music.play(-1)
 image = pygame.image.load('play.png')
 
 # Get the original image size

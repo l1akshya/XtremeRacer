@@ -1,8 +1,11 @@
 import pygame
 import math
 import random
-pygame.init()
+from pygame import mixer
+
 def main():
+    pygame.init()
+    from pygame import mixer
     screen_width = 1168
     screen_height = 648
     player_car_x=584
@@ -18,6 +21,8 @@ def main():
     screenz=pygame.image.load("home_screenz.png")
     start_playing=pygame.image.load("resume.png").convert_alpha()#play button for start screen
     exit_playing=pygame.image.load("quit.png").convert_alpha()#exit button for start screen
+    nfs=mixer.music.load(r"C:\Users\LAKSHYA\Desktop\XtremeRacer\nfs.mp3")
+    mixer.music.play(-1)    
 
     class button():
         def __init__(self,x,y,image):
@@ -441,5 +446,3 @@ def main():
                 print("Exit")
             pygame.display.flip()
             pygame.display.update()
-
-
